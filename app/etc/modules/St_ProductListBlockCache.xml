@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!--
+ * @category    St
+ * @package     St_ProductListBlockCache
+ * @author      Simen Thorsrud <simen.thorsrud@gmail.com>
+ * @license     http://opensource.org/licenses/MIT The MIT License (MIT)
+-->
+<config>
+  <modules>
+    <St_ProductListBlockCache>
+      <active>true</active>
+      <codePool>local</codePool>
+    </St_ProductListBlockCache>
+  </modules>
+</config>
