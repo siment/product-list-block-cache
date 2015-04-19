@@ -1,4 +1,4 @@
-# st_productlistblockcache
+# St_ProductListBlockCache
 
 ## Description
 
@@ -12,7 +12,7 @@ Make sure you have [modman](https://github.com/colinmollenhour/modman).
 
 ```bash
 $ cd /path/to/your/magento
-$ modman clone https://github.com/siment/st_productlistblockcache.git
+$ modman clone https://github.com/siment/St_ProductListBlockCache.git
 ```
 
 ### Manual install
