@@ -2,7 +2,9 @@
 
 ## Description
 
-A simple module that adds cache information to `Mage_Catalog_Block_Product_List` and thereby enabling block caching for product lists
+A simple module that adds cache information to `Mage_Catalog_Block_Product_List` - thereby enabling block caching on product lists.
+
+This module was created for a tutorial on [Minute.no](http://www.minute.no). 
  
 ## Installation
 
