@@ -8,7 +8,7 @@
 <config>
     <modules>
         <St_ProductListBlockCache>
-            <version>0.1.4</version>
+            <version>0.1.5</version>
         </St_ProductListBlockCache>
     </modules>
     <global>

@@ -9,7 +9,7 @@
   <modules>
     <St_ProductListBlockCache>
       <active>true</active>
-      <codePool>local</codePool>
+      <codePool>community</codePool>
     </St_ProductListBlockCache>
   </modules>
 </config>
