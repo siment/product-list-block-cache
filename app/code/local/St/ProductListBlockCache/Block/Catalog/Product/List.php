@@ -55,6 +55,9 @@ class St_ProductListBlockCache_Block_Catalog_Product_List extends Mage_Catalog_B
         // Get Magento's standard product list block cache key info
         $info = parent::getCacheKeyInfo();
 
+        // Dispatch event so others can modfify cache key info of this block without modifying module
+        Mage::dispatchEvent('st_productlistblockcache_cache_info_add_before', array('cache_key_info' => $info));
+
         /** @var Mage_Catalog_Model_Category|null $currentCategory Current category model or null */
         $currentCategory = Mage::registry('current_category');
 
@@ -80,6 +83,14 @@ class St_ProductListBlockCache_Block_Catalog_Product_List extends Mage_Catalog_B
 
         // Add website_id to cache key info
         $info['website_id'] = $currentWebsiteId;
+
+        /** @var string $layerStateKey */
+        $layerStateKey = $this->getLayer()->getStateKey();
+        $info['layer_state_key'] = $layerStateKey;
+
+        // Dispatch event so others can modfify cache key info of this block without modifying module
+        Mage::dispatchEvent('st_productlistblockcache_cache_info_add_after', array('cache_key_info' => $info));
+
         return $info;
     }
 
