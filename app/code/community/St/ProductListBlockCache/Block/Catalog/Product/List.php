@@ -88,6 +88,10 @@ class St_ProductListBlockCache_Block_Catalog_Product_List extends Mage_Catalog_B
         $layerStateKey = $this->getLayer()->getStateKey();
         $info['layer_state_key'] = $layerStateKey;
 
+        /** @var string $originalRequestUri */
+        $originalRequestUri = Mage::app()->getRequest()->getOriginalRequest()->getRequestUri();
+        $info['request_uri'] = $originalRequestUri;
+
         // Dispatch event so others can modfify cache key info of this block without modifying module
         Mage::dispatchEvent('st_productlistblockcache_cache_info_add_after', array('cache_key_info' => $info));
 
