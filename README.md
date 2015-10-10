@@ -65,6 +65,13 @@ Download files and copy to your Magento root
 
 ## Changelog
 
+### 0.1.7
+
+Now supports language and currency switching:
+
+1. Added locale code to cache key info
+1. Added currency code to cache key info
+
 ### 0.1.6
 
 1. Adding request URI to cache key to acommodate for filters and page numbers. It is not really that useful to have

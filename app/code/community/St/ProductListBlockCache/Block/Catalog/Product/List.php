@@ -92,6 +92,12 @@ class St_ProductListBlockCache_Block_Catalog_Product_List extends Mage_Catalog_B
         $originalRequestUri = Mage::app()->getRequest()->getOriginalRequest()->getRequestUri();
         $info['request_uri'] = $originalRequestUri;
 
+        // Current currency code
+        $info['currency'] = Mage::app()->getStore()->getCurrentCurrencyCode();
+
+        // Current locale code
+        $info['locale'] = Mage::app()->getLocale()->getLocaleCode();
+
         // Dispatch event so others can modfify cache key info of this block without modifying module
         Mage::dispatchEvent('st_productlistblockcache_cache_info_add_after', array('cache_key_info' => $info));
 
