@@ -1,0 +1,16 @@
+{
+  "name": "st/product-list-block-cache",
+  "type": "magento-module",
+  "license": "MIT",
+  "description": "Add block caching to product lists",
+  "homepage": "https://github.com/siment/product-list-block-cache",
+  "authors": [
+    {
+      "name": "Simen Thorsrud",
+      "email": "simen.thorsrud@vaimo.com"
+    }
+  ],
+  "require": {
+    "magento-hackathon/magento-composer-installer": "*"
+  }
+}

@@ -1,2 +1,2 @@
-app/code/community/St/ProductListBlockCache/*  app/code/community/St/ProductListBlockCache/
+app/code/community/St/ProductListBlockCache  app/code/community/St/ProductListBlockCache
 app/etc/modules/St_ProductListBlockCache.xml    app/etc/modules/St_ProductListBlockCache.xml
