@@ -65,6 +65,10 @@ Download files and copy to your Magento root
 
 ## Changelog
 
+### 0.1.9
+
+1. Fixed typo in vendor name in `composer.json`
+
 ### 0.1.8
 
 1. Added `composer.json` to make module compatible with [Composer](https://getcomposer.org/) installation.
