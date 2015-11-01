@@ -87,6 +87,10 @@ class St_ProductListBlockCache_Block_Catalog_Product_List extends Mage_Catalog_B
         /** @var string $layerStateKey */
         $layerStateKey = $this->getLayer()->getStateKey();
         $info['layer_state_key'] = $layerStateKey;
+        
+        /** @var string $formKey */
+        $formKey = Mage::getSingleton('core/session')->getFormKey();
+        $info['form_key'] = $formKey;
 
         /** @var string $originalRequestUri */
         $originalRequestUri = Mage::app()->getRequest()->getOriginalRequest()->getRequestUri();
