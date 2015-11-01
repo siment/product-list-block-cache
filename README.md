@@ -65,6 +65,10 @@ Download files and copy to your Magento root
 
 ## Changelog
 
+### 0.1.10
+
+1. Added form key used in "add to" links to cache key info of products list block. (Thank you, @p-makowski)
+
 ### 0.1.9
 
 1. Fixed typo in vendor name in `composer.json`
